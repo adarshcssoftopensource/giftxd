@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Notification</title>
+</head>
+<body>
+    <table cellspacing="0" cellpadding="10" style="font-family: 'Satoshi', sans-serif; width: 450px;  margin-left: auto; margin-right: auto; font-size: medium;  line-height: 1.2rem; ">
+        <tr>
+            <td>
+
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <table style="margin-bottom: 1.25rem;">
+                                <tr>
+                                    <td>
+                                        <img src="https://res.cloudinary.com/du4apheec/image/upload/v1699781826/logo_u983p2.png" width="75" height="75"   style="padding-left: 10px;" alt="GiftXD logo">
+                                    </td>
+                                </tr>
+                            </table>
+            
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="10">
+                                <tr>
+                                    <td>
+                                        <div style="font-weight: bold; font-size: 1.2rem;">Log In Notification</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">Hello, <span style="font-weight: 600;">{{firstname}}</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">We wanted to let you know that your GiftXD account was accessed.</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table cellspacing="0" cellpadding="0" style="margin-top: 1.25rem; margin-bottom: 1.25rem; width: 100%; height: 250px; border-radius: 25px; border: 1px solid rgb(202, 200, 200);">
+                                            <tr>
+                                                <td>
+                                                    <table  style="width: 100%;  border-bottom: 1px solid rgb(202, 200, 200); padding: 1rem;">
+                                                        <tr>
+                                                            <td>
+                                                                <div style="font-weight: 600; color: #363636;">Login Notification</div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table  cellspacing="10" cellpadding="10">
+                                                        <tr>
+                                                            <td>
+                                                                <div> <span style="font-weight: bold; color: #363636;">When:</span> <span style="color: gray; font-size: medium;">{{datetime}}</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div><span style="font-weight: bold; color: #363636;">Where:</span> <span style="color: gray; font-size: medium;">{{location}}</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div><span style="font-weight: bold; color: #363636;">Browser:</span> <span style="color: gray; font-size: medium;">{{browser}}</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div><span style="font-weight: bold; color: #363636;">OS:</span> <span style="color: gray; font-size: medium;">{{os}}</span></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">If you were not the person who logged in, please click the button to go to your Account Settings and create a new password</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table cellspacing="0" cellpadding="10" style="font-size: 1.25rem; line-height: 1.5rem; margin-left: auto; margin-right: auto; width: 100%;">
+                                            <tr>
+                                                <td>
+                                                    <a href="https://staging.giftxd.com/auth/reset-password?email={{email}}">
+                                                        <button style="cursor: pointer; border: 0rem; font-size: 1rem; font-weight: 600; line-height: 1.5rem; width: 100%; border-radius: 10px; padding-top: 0.7rem; padding-bottom: 0.7rem; background-color: #0040E3;; color: white;">This Wasn't Me</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="text-align: center;font-size: 1.0rem; color: #4D4D4D;">Button not working? <a style="text-decoration: none;font-size: 1.0rem" href="https://staging.giftxd.com/auth/reset-password?email={{email}}" target="_blank">Create A New Password</a></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="10" style="font-size: 1rem;  line-height: 1rem;">
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <div style="color: #4D4D4D;">Thank you,</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="color: #4D4D4D;">The <a style="text-decoration: none;" href="mailto:support@giftxd.team">GiftXD</a>  Team</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">This email was intended for {{firstname}}, because you signed up for GiftXD.</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">The link in this email will always redirect to <a style="text-decoration: none;" href="https://www.giftxd.com">https://www.giftxd.com</a>. </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">Want to manage your email preferences? <a style="text-decoration: none;" href="https://www.giftxd.com">Manage</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color: #4D4D4D;">{{address}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
